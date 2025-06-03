@@ -1,0 +1,83 @@
+body {
+  background: #131b21;
+}
+
+body::before {
+  content: "Good Luck Barbie!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  color: rgba(236, 195, 225, 0.71); /* Light pink with transparency */
+  z-index: -1;
+  pointer-events: none; /* Prevents interaction with the watermark */
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+#text{
+  margin-top: 20px;
+  z-index : 500;
+  font-size: 15px;
+  font-family: 'Helvetica', sans-serif;
+  width : 100px;
+  
+}
+.button{
+  text-align : center;
+  background-color: #b483a2;
+  color : white;
+  display : block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Helvetica', sans-serif;
+  width : 100px;
+  z-index : 500;
+  background-color: #b483a2;
+  color : black;
+  display : block
+}
+.footer {
+  margin-top : 0;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #d89fc9; /* Muted pink */
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer p {
+  margin: 0;
+}
+
+#Footer_group_1_,
+[id^=PinkFlowerGroup],
+[id^=BaseGroup] path,
+[id^=LeafGroup] path,
+path[id^=Stroke],
+g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^=Dots],
+[id^=Flourish] {
+  visibility: hidden;
+}
